@@ -5299,7 +5299,7 @@ self.C3_ExpressionFuncs = [
 		},
 		p => {
 			const n0 = p._GetNode(0);
-			return () => and("Clicks: ", n0.ExpInstVar());
+			return () => and("点击: ", n0.ExpInstVar());
 		},
 		p => {
 			const n0 = p._GetNode(0);
@@ -5391,7 +5391,7 @@ self.C3_ExpressionFuncs = [
 			const v0 = p._GetNode(0).GetVar();
 			const v1 = p._GetNode(1).GetVar();
 			const v2 = p._GetNode(2).GetVar();
-			return () => (and((and((and("Time: ", v0.GetValue()) + "h "), v1.GetValue()) + "m "), v2.GetValue()) + "s");
+			return () => (and((and((and("时间: ", v0.GetValue()) + "h "), v1.GetValue()) + "m "), v2.GetValue()) + "s");
 		},
 		() => "seconds",
 		() => "minutes",
@@ -5453,7 +5453,7 @@ self.C3_ExpressionFuncs = [
 			return () => and("小时 ", n0.ExpInstVar());
 		},
 		() => "自动秒钟: 0",
-		() => "分钟速度升级已解锁!",
+		() => "分钟速度升级\n已解锁!",
 		() => "\n已解锁!",
 		() => 3,
 		() => "分钟乘数已解锁!",
@@ -5462,14 +5462,14 @@ self.C3_ExpressionFuncs = [
 		() => "自动分钟开启",
 		() => 6,
 		() => 7,
-		() => "小时收集速度提高6倍!",
+		() => "小时收集速度\n提高6倍!",
 		() => 8,
 		() => 9,
 		() => "不再有价格上涨!",
 		() => 10,
 		() => 11,
-		() => "一切都变得强大12倍!",
-		() => "赢得比赛! 自动时间!",
+		() => "一切都变得\n强大12倍!",
+		() => "赢得比赛!\n 自动时间!",
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			const n1 = p._GetNode(1);
@@ -5479,7 +5479,7 @@ self.C3_ExpressionFuncs = [
 		},
 		p => {
 			const n0 = p._GetNode(0);
-			return () => (and(("\n" + "and "), n0.ExpInstVar()) + " clicks!");
+			return () => (and(("\n" + "和 "), n0.ExpInstVar()) + " 点击!");
 		},
 		() => "lowestClickCount",
 		() => "lowestClickCountTime",
@@ -5539,7 +5539,7 @@ self.C3_ExpressionFuncs = [
 		},
 		p => {
 			const v0 = p._GetNode(0).GetVar();
-			return () => and("Lowest Click Count: ", v0.GetValue());
+			return () => and("最低点击次数: ", v0.GetValue());
 		},
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
@@ -5552,7 +5552,7 @@ self.C3_ExpressionFuncs = [
 		},
 		p => {
 			const v0 = p._GetNode(0).GetVar();
-			return () => and("Highest Click Count: ", v0.GetValue());
+			return () => and("最高点击次数: ", v0.GetValue());
 		},
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
@@ -5561,11 +5561,11 @@ self.C3_ExpressionFuncs = [
 			const v3 = p._GetNode(3).GetVar();
 			const f4 = p._GetNode(4).GetBoundMethod();
 			const v5 = p._GetNode(5).GetVar();
-			return () => (((((("Shortest Time: " + f0(Math.floor((v1.GetValue() / 3600)), 2)) + "h ") + f2(Math.floor(((v3.GetValue() / 60) % 60)), 2)) + "m ") + f4(Math.floor((v5.GetValue() % 60)), 2)) + "s");
+			return () => (((((("最短时间: " + f0(Math.floor((v1.GetValue() / 3600)), 2)) + "h ") + f2(Math.floor(((v3.GetValue() / 60) % 60)), 2)) + "m ") + f4(Math.floor((v5.GetValue() % 60)), 2)) + "s");
 		},
 		p => {
 			const v0 = p._GetNode(0).GetVar();
-			return () => (and("with ", v0.GetValue()) + " clicks");
+			return () => (and("with ", v0.GetValue()) + " 点击");
 		},
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
@@ -5574,7 +5574,7 @@ self.C3_ExpressionFuncs = [
 			const v3 = p._GetNode(3).GetVar();
 			const f4 = p._GetNode(4).GetBoundMethod();
 			const v5 = p._GetNode(5).GetVar();
-			return () => (((((("Longest Time: " + f0(Math.floor((v1.GetValue() / 3600)), 2)) + "h ") + f2(Math.floor(((v3.GetValue() / 60) % 60)), 2)) + "m ") + f4(Math.floor((v5.GetValue() % 60)), 2)) + "s");
+			return () => (((((("最长时间: " + f0(Math.floor((v1.GetValue() / 3600)), 2)) + "h ") + f2(Math.floor(((v3.GetValue() / 60) % 60)), 2)) + "m ") + f4(Math.floor((v5.GetValue() % 60)), 2)) + "s");
 		},
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
